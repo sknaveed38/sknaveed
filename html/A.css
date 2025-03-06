@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3px;
+}
+i {
+    font-size: large;
+    background: rgba(233, 224, 224, 0.9);
+
+}
+p {
+    font-size: larger;
+    margin-top: 10px;
+}
+img {
+    display: block;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+}

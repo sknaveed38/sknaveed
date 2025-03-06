@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-snap-type:y mandatory;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    font-size: x-large;
+    position: relative;
+    padding: 0px;
+    background: rgb(149 46 46 / 45%);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right:1px solid rgba(255, 255, 255, 0.5) ;
+    border-radius: 25px;
+    width: 500px;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0 , 0, 1, 0.9);
+    margin: auto;
+}
+.app_videos {
+    position: relative;
+    height: 600px;
+    background-color:white;
+    overflow: scroll;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    border-radius:20px ;
+    scroll-snap-type: y;
+}
+.app_videos::-webkit-scrollbar {
+    display: none;
+}
+.app_videos{
+    -ms-overflow-style:none;
+
+}
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+.video_player {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+     
+}
+.videoheader {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.reel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+.play-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
