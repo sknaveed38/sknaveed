@@ -4,18 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKGYM</title>
-    <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon"
-        href="C:\Users\SHAIK.NAVEED\Desktop\.html\images\WhatsApp Image 2025-02-10 at 23.01.59_5bec3308.jpg"
-        type="image/x-icon">
+    <title>Buy Gym Items</title>
+    <link rel="stylesheet" href="p2-3.css">
 </head>
 
 <body>
 
+    <header>
+        <h1>Gym Equipment Store</h1>
+    </header>
+
+    <div class="container">
+        <div class="products">
+            <div class="product" data-name="Dumbbells" data-price="1500">
+                <img src="dumbbell.jpg" alt="Dumbbells">
+                <h3>Dumbbells</h3>
+                <p>₹1500</p>
+                <button onclick="addToCart('Dumbbells', 1500)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Treadmill" data-price="25000">
+                <img src="treadmill.jpg" alt="Treadmill">
+                <h3>Treadmill</h3>
+                <p>₹25000</p>
+                <button onclick="addToCart('Treadmill', 25000)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Yoga Mat" data-price="800">
+                <img src="yoga-mat.jpg" alt="Yoga Mat">
+                <h3>Yoga Mat</h3>
+                <p>₹800</p>
+                <button onclick="addToCart('Yoga Mat', 800)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
