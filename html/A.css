@@ -19,3 +19,6 @@ img {
     display: flex;
     align-items: flex-start;
 }
+h1 {
+    background: antiquewhite;
+}
