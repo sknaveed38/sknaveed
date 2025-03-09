@@ -27,10 +27,24 @@ body {
 button {
     background-color: #28a745;
     color: white;
-    padding: 10px;
+    padding: 10px 50px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 10px;
+}
+
+a.btn {
+    background-color: #e90a0a;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 68px;
+    border-radius: 10px;
+}
+a.btn:hover {
+    background-color: #b90606;
 }
 
 button:hover {
