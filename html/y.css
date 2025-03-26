@@ -7,9 +7,44 @@ img {
     border-radius: 25%;
     display: flex;
     outline: double;
+    justify-self: center;
 }
 body {
     justify-content: center;
-    display: flex;
+    display: block;
     background-color: antiquewhite;
+}
+i {
+    font-size: x-large;
+    text-align: center;
+}
+.yoga{
+    display: flex;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.texts{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+}
+video{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    place-self: center;
+}
+h1{
+    color: blue;
+}
+p{
+    text-align: -webkit-left;
 }
